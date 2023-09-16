@@ -7,6 +7,8 @@ import { useParams } from 'react-router-dom';
 export default function ProductDetails() {
   const { id } = useParams();
 
+  // using redux dynamicly fetching data according to product id 
+  // const { data: product, isLoading, error } = useSingleProductQuery(id);
   //! Temporary code, should be replaced with redux
   const [data, setData] = useState<IProduct[]>([]);
   useEffect(() => {
